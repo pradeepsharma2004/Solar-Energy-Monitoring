@@ -3,6 +3,101 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Solar Energy Monitoring</title>
+     <link rel="shortcut icon" href="logo.jpg" />
+     <link rel="stylesheet" href="css/css/bootstrap.min.css">
+     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <style type="text/css">
+                 body{
+                    background: url("11.jpg")no-repeat center center fixed;
+                    background-repeat:no-repeat; 
+                    background-size: cover;
+                    background-position: top;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                     }
+                 h2{text-shadow: 2px 2px red;}
+                 .form-container{
+                    width: 400px;
+                    height: 300px;
+                    background: rgba(0,0,0,0.8);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    border-radius: 10px;
+                    box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
+                 }
+                 .form-container img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                 }
+                 .form-content{
+                    width: 100%;
+                    height: 100%;
+                    padding: 60px 40px;
+                 }
+                 .form-content input{
+                    width: 300px;
+                    height: 30px;
+                    border:none;
+                    background-color: transparent;
+                    border-bottom: 2px solid #fff;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    outline: none;
+                    padding: 5px;
+                    font-size: 15px;
+                    color: #fff;
+                 }
+                 .form-content label{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                 }
+                  .form-content input[type=submit]{
+                    background: #66f;
+                    border-bottom:none;
+                    height: 40px;
+                    width: 310px;
+                  }
+       </style>
+   
+</head>
+<body>
+<h2><marquee scrollamount="5" scrolldelay="25" behavior="alternate">MONITORING OF AC LOAD POWERED BY SOLAR ENERGY</marquee></h2>
+
+
+
+<div class="form-container">
+    <img src="logo.jpg">
+    <div class="form-content">
+    <form action="base1.html" onsubmit="return validate();" name="loginform">
+        <label>Enter User Id</label><br/>
+        <input type="text" name="id"><br>
+        <label>Enter Password</label><br/>
+        <input type="password" name="pwd"><br>
+        <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+ <script type="text/javascript" src="js/login.js">       
+</script>
+<script src="js/jquery-3.2.1.min.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Solar Energy Monitoring</title>
 	 <link rel="shortcut icon" href="logo.jpg" />
 	 <link rel="stylesheet" href="css/css/bootstrap.min.css">
