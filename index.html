@@ -2,61 +2,103 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Solar Energy Monitoring</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	 <link rel="shortcut icon" href="logo.jpg" />
+	 <link rel="stylesheet" href="css/css/bootstrap.min.css">
+	 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     	<style type="text/css">
-	             body,html{background-repeat:no-repeat; 
-	             	background-attachment: unset;
-	              background-size: cover;}
+	             body{
+	             	background: url("11.jpg")no-repeat center center fixed;
+	             	background-repeat:no-repeat; 
+	              	background-size: cover;
+	              	background-position: top;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+	                 }
                  h2{text-shadow: 2px 2px red;}
-	           .f1{margin-top: 150px;}
-	           .t1{opacity: 0.7;}
-	           .i1{width:100px;height:32px;font-size: 22px;background-color: black;color:white;font-style: italic;}
+                 .form-container{
+                 	width: 400px;
+                 	height: 300px;
+                 	background: rgba(0,0,0,0.8);
+                 	position: absolute;
+                 	top: 50%;
+                 	left: 50%;
+                 	transform: translate(-50%,-50%);
+                 	border-radius: 10px;
+                 	box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
+                 }
+                 .form-container img{
+                 	width: 70px;
+                 	height: 70px;
+                 	border-radius: 50%;
+                 	position: absolute;
+                 	top: 0;
+                 	left: 50%;
+                 	transform: translate(-50%,-50%);
+                 }
+                 .form-content{
+                 	width: 100%;
+                 	height: 100%;
+                 	padding: 60px 40px;
+                 }
+                 .form-content input{
+                 	width: 300px;
+                 	height: 30px;
+                 	border:none;
+                 	background-color: transparent;
+                 	border-bottom: 2px solid #fff;
+                 	margin-top: 5px;
+                 	margin-bottom: 10px;
+                 	outline: none;
+                 	padding: 5px;
+                 	font-size: 15px;
+                 	color: #fff;
+                 }
+                 .form-content label{
+                 	color: white;
+                 	font-weight: bold;
+                 	font-size: 20px;
+                 }
+                  .form-content input[type=submit]{
+                  	background: #66f;
+                  	border-bottom:none;
+                  	height: 40px;
+                  	width: 310px;
+                  }
 	   </style>
-    <script type="text/javascript">
-        function validate()
-        {
-            var username = document.f.username.value;
-            var password = document.f.password.value;
-                if(username == 'solarproject@gmail.com' && password == 'solarproject')
-                    {
-                      alert ("Login successfully");
-                      window.location="base1.html";
-                       return false;
-                    }
-                else
-                    {
-                    alert("check your id and password");
-                    }
-        } 
-</script>
+   
 </head>
-<body background="11.jpg">
-	<div class="container">
+<body>
+<h2><marquee scrollamount="5" scrolldelay="25" behavior="alternate">MONITORING OF AC LOAD POWERED BY SOLAR ENERGY</marquee></h2>
+<div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            	<center>
-<h2 style="color:black;margin-top: 50px;"><marquee scrollamount="5" scrolldelay="25" behavior="alternate" width="1000px">MONITORING OF AC LOAD POWERED BY SOLAR ENERGY</marquee></h2>
-	<font size="5" color="black">
-	<div class=f1>
-		<form method="post" onsubmit="return validate()" name="f">
-			<table class="t1" bgcolor="#D8D8D8" border="7px">
-		<tr><td><label>USER ID:</label></td><td><input type="text" name="username" placeholder="USERID" size="30"></td></tr>
-		<tr><td><label>PASSWORD:</label></td><td><input type="password" name="password" placeholder="PASSWORD" size="30px"></td></tr>
-			</table>
-			<input class="i1" type="submit" value="SUBMIT" size="20" >
-		</form>
-	</div>
-	</font>
-</center>
 
-
-
+    <div class="form-container">
+        </form>
+        <input type="password" name="pwd"><br>
+        <input type="submit" name="submit" value="Submit">
+        <input type="text" name="id"><br>
+        <label>Enter Password</label><br/>
+        <label>Enter User Id</label><br/>
+    </div>
+    <div class="form-content">
+         <form action="base1.html" onsubmit="return validate();" name="loginform">
+        <img src="logo.jpg">
+    </div>
             </div>
         </div>
-	</div>
+</div>
 
 
+
+
+
+ <script type="text/javascript" src="js/login.js">       
+</script>
+<script src="js/jquery-3.2.1.min.js"></script>
 </body>
 </html>
